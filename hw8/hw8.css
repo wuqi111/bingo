@@ -1,0 +1,174 @@
+#structure{
+    border: solid 1px black;
+    border-color: rgb(180,180,180);
+    margin-left:20%;
+    width:60%;
+    border-radius: 6px;
+    background-color: rgb(244,244,244);
+    margin-top: 3px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+#color1{
+    color: red;
+}
+
+#margin{
+    padding-bottom: 20px;
+}
+
+#validation{
+    margin-left: 10%;
+    background-color: rgb(16,84,243);
+    color: white;
+}
+
+.glyphicon-search{
+    font-size: 13px;
+}
+
+#clear{
+    margin-left: 2px;
+    color: black;
+    background-color: white;
+}
+
+
+
+.color2{
+        border: solid 1px black;
+    border-color: rgb(180,180,180);
+    background-color: rgb(223,226,230);
+}
+
+#position{
+    margin-left: 36%;
+}
+
+#results{
+    background-color: rgb(16,84,243);
+    color: white;
+}
+
+#favorites{
+     margin-left: 2px;
+    color: black;
+    background-color: white;
+}
+
+#button2{
+    padding-top: 10px;
+    padding-bottom: 20px;
+}
+
+#RF{
+    margin-bottom: 50px;
+}
+
+.fontsize{
+    height: 40px;
+}
+
+#border{
+       border-top: 1px solid black;
+       border-top-color: rgb(180,180,180);
+       border-bottom: 1px solid black;
+       border-bottom-color: rgb(180,180,180);
+       border-collapse:collapse;
+}
+
+#newinfo{
+    animation: 1s slidemove;
+}
+
+@keyframes slidemove{
+    from{
+        opacity: 1;
+        left: -150%;
+    }
+    to{
+        opacity: 1;
+        left: 0;
+    }
+}
+
+#map{
+    height: 400px;
+    
+}
+
+#changecol{
+    background-color: rgb(237,237,237);
+}
+
+
+#forgoogle{
+    margin-top:10px;
+}
+
+
+.rating {
+    font-size: 10px;
+    color: orange;
+    display: inline-block;
+    overflow: hidden;
+}
+
+.rating::before {
+    content: "★★★★★"
+}
+
+.card-columns {
+    column-count:4;}
+
+@media only screen and (max-width: 768px) {
+   .card-columns {
+
+    column-count:1;}
+
+}
+
+html{
+    overflow-x : hidden ; 
+    height : 100% ; 
+    margin : 0 ; 
+    padding : 0 ; 
+}
+
+
+
+#border111{
+    width: 94% !important; 
+				margin-bottom: 20px !important; 
+				display: inline-block !important; 
+				padding: 0 15px !important; 
+				text-decoration: none !important; 
+				border: solid 1px #AAA !important; 
+				font: 18px verdana !important; 
+				text-align: left; 
+			
+				border-radius: .55em .55em .55em .55em !important; 
+				 
+			
+				background: white !important; 
+				cursor: pointer !important;
+				float: left
+}
+
+.animate-hide {
+   -webkit-transition:all cubic-bezier(0.250, 0.460, 0.450, 0.940) 3s;
+   -moz-transition:all cubic-bezier(0.250, 0.460, 0.450, 0.940) 3s;
+   -o-transition:all cubic-bezier(0.250, 0.460, 0.450, 0.940) 3s;
+   transition:all cubic-bezier(0.250, 0.460, 0.450, 0.940) 3s;
+
+   opacity:1;
+   position: relative;
+
+   left:0;
+}
+
+.animate-hide.ng-hide {
+  left: -200px;
+  opacity:0;
+}

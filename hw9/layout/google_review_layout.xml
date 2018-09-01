@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:hedgehog="http://schemas.android.com/apk/res-auto"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/display_disapear">
+
+
+    <ImageView
+        android:id="@+id/profile_url"
+        android:layout_width="501dp"
+        android:layout_height="107dp"
+        android:layout_weight="66.6"
+        android:gravity="center"
+        android:text="icon"
+        android:textAlignment="center" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_weight="33.3">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:gravity="center"
+            android:text="congr1"
+            android:id="@+id/url_name"/>
+
+        <RatingBar
+            android:id="@+id/rating_google"
+            android:layout_width="match_parent"
+            android:layout_height="43dp"
+            android:gravity="center"
+            android:numStars="5"
+            android:text="hello3" />
+
+        <TextView
+            android:id="@+id/time_google"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:gravity="center"
+            android:text="hello3" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="hello3"
+            android:id="@+id/text_google"/>
+
+
+    </LinearLayout>
+
+
+
+
+
+</LinearLayout>

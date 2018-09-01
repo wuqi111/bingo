@@ -1,0 +1,64 @@
+<resources>
+    <string name="app_name">HW9</string>
+    <string name="google_maps_API_key">AIzaSyCLMrfYVBaXfPIa2AK6jZ0xCQdyBe9PF7w
+</string>
+
+    <string name="Review">Review</string>
+    <string-array name="select_review">
+        <item>Google reviews</item>
+        <item>Yelp reviews</item>
+    </string-array>
+
+    <string name="rating_reivew">rating_reivew</string>
+    <string-array name="select_rating">
+        <item>Defaults Order</item>
+        <item>Highest Rating</item>
+        <item>Lowest Rating</item>
+        <item>Most recent</item>
+        <item>Least recent</item>
+    </string-array>
+
+    <string name="Category">Category</string>
+    <string-array name="more_category">
+        <item>Default</item>
+        <item>airport</item>
+        <item>amusement_Park</item>
+        <item>aquarium</item>
+        <item>art_gallery</item>
+        <item>bakery</item>
+        <item>bar</item>
+        <item>beauty_salon</item>
+        <item>bowling_alley</item>
+        <item>bus_station</item>
+        <item>cafe</item>
+        <item>bampground</item>
+        <item>bar_rental</item>
+        <item>casino</item>
+        <item>lodging</item>
+        <item>movie_theater</item>
+        <item>museum</item>
+        <item>night_club</item>
+        <item>park</item>
+        <item>parking</item>
+        <item>restaurant</item>
+        <item>shopping_mall</item>
+        <item>stadium</item>
+        <item>subway_station</item>
+        <item>taxi_stand</item>
+        <item>train_station</item>
+        <item>transit_station</item>
+        <item>travel_sagency</item>
+        <item>zoo</item>
+
+    </string-array>
+
+    <string name="model">mode</string>
+    <string-array name="modelfortravel">
+        <item>DRIVING</item>
+        <item>BICYCLING</item>
+        <item>TRANSIT</item>
+         <item>WALKING</item>
+    </string-array>
+
+
+</resources>

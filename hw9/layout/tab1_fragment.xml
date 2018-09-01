@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Tab1"
+        android:layout_marginTop="40dp"
+        android:id="@+id/textTab1"
+        />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/butTest"
+        android:text="testbu1"/>
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:id="@+id/RelativeLayout1"
+        android:layout_width="match_parent"
+        android:layout_height="663dp"
+        tools:context="com.example.wuqi.hw9.tab1_fragment"
+        tools:layout_editor_absoluteY="-4dp">
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/keyword"
+            android:text="Keyword" />
+
+        <TextView
+            android:id="@+id/textView4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/category"
+            android:text="@string/Category" />
+
+        <Spinner
+            android:id="@+id/category"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/textView5" />
+
+        <TextView
+            android:id="@+id/textView5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/distance"
+            android:text="Distance ( in miles)" />
+
+        <EditText
+            android:id="@+id/distance"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/textView6"
+            android:layout_marginBottom="-293dp"
+            android:ems="10"
+            android:hint="Enter distance (default 10 miles)"
+            android:inputType="textPersonName" />
+
+        <TextView
+            android:id="@+id/textView6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="293dp"
+            android:text="From" />
+
+
+        <EditText
+            android:id="@+id/keyword"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/textView4"
+            android:ems="10"
+            android:hint="Enter keyword"
+            android:inputType="textPersonName" />
+
+        <AutoCompleteTextView
+            android:id="@+id/other_palce"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="253dp"
+            android:ems="10"
+            android:hint="Typle in the Location"
+            android:inputType="textPersonName" />
+
+        <TextView
+            android:id="@+id/name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/select"
+            android:layout_marginTop="20dp" />
+
+
+        <TextView
+            android:id="@+id/test"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="70dp" />
+
+        <RadioGroup
+            android:id="@+id/button_together"
+            android:layout_width="match_parent"
+            android:layout_height="515dp"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="14dp">
+
+            <RadioButton
+                android:id="@+id/local_place"
+                android:layout_width="184dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_marginTop="302dp"
+                android:checked="true"
+                android:onClick="choose_one"
+                android:text="Current location" />
+
+            <RadioButton
+                android:id="@+id/fore_place"
+                android:layout_width="203dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/local_place"
+                android:onClick="choose_one"
+                android:text="Other.Specify Location" />
+
+        </RadioGroup>
+
+
+        <Button
+            android:id="@+id/search_first"
+            android:layout_width="162dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="184dp"
+            android:layout_toStartOf="@+id/test"
+            android:text="SEARCH" />
+
+        <Button
+            android:id="@+id/clear_data"
+            android:layout_width="166dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignTop="@+id/search_first"
+            android:layout_marginEnd="25dp"
+            android:text="CLEAR" />
+
+        <TextView
+            android:id="@+id/validation_First"
+            android:layout_width="177dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="176dp"
+            android:text="please input a value"
+            android:textColor="@android:color/holo_red_light"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/validation_second"
+            android:layout_width="140dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/other_palce"
+            android:layout_marginStart="23dp"
+            android:layout_marginTop="-253dp"
+            android:text="please input a value"
+            android:textColor="@android:color/holo_red_light"
+            android:visibility="gone"
+       />
+
+        <!-- <TextView
+             android:id="@+id/validation_second"
+             android:layout_width="192dp"
+             android:layout_height="wrap_content"
+             android:layout_alignParentStart="true"
+             android:layout_below="@+id/other_palce"
+             android:text="please input a value"
+             android:textColor="@android:color/holo_red_light"
+             android:visibility="gone"
+            />-->
+    </RelativeLayout>
+
+</android.support.constraint.ConstraintLayout>

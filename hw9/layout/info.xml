@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".tableactivity">
+
+    <Button
+        android:id="@+id/info"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="testbu1" />
+
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:id="@+id/RelativeLayout1"
+        android:layout_width="match_parent"
+        android:layout_height="662dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.666"
+        tools:context="com.example.wuqi.hw9.detailActivity">
+
+        <TextView
+            android:id="@+id/address_key"
+            android:layout_width="125dp"
+            android:layout_height="40dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="53dp"
+            android:layout_marginTop="179dp" />
+
+        <TextView
+            android:id="@+id/address_data"
+            android:layout_width="186dp"
+            android:layout_height="40dp"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginEnd="37dp"
+            android:layout_marginTop="178dp" />
+
+        <TextView
+            android:id="@+id/phone_key"
+            android:layout_width="125dp"
+            android:layout_height="40dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="52dp"
+            android:layout_marginTop="226dp" />
+
+        <TextView
+            android:id="@+id/phone_data"
+            android:layout_width="179dp"
+            android:layout_height="40dp"
+            android:layout_alignTop="@+id/phone_key"
+            android:layout_toEndOf="@+id/price_key"
+            android:autoLink="phone"/>
+
+
+        <TextView
+            android:id="@+id/price_key"
+            android:layout_width="125dp"
+            android:layout_height="40dp"
+            android:layout_alignStart="@+id/phone_key"
+            android:layout_alignTop="@+id/price_data" />
+
+        <TextView
+            android:id="@+id/price_data"
+            android:layout_width="176dp"
+            android:layout_height="40dp"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginEnd="43dp"
+            android:layout_marginTop="275dp" />
+
+
+        <TextView
+            android:id="@+id/rating_key"
+            android:layout_width="125dp"
+            android:layout_height="40dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignTop="@+id/rating_data"
+            android:layout_marginStart="50dp" />
+
+        <RatingBar
+            android:id="@+id/rating_data"
+            android:layout_width="229dp"
+            android:layout_height="40dp"
+            android:layout_alignParentBottom="true"
+            android:layout_alignStart="@+id/price_data"
+            android:layout_marginBottom="300dp"
+
+            android:layout_marginStart="-16dp" />
+
+        <TextView
+            android:id="@+id/google_key"
+            android:layout_width="117dp"
+            android:layout_height="43dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignTop="@+id/website_data"
+            android:layout_marginStart="49dp" />
+
+        <TextView
+            android:id="@+id/google_data"
+            android:layout_width="179dp"
+            android:layout_height="52dp"
+            android:layout_alignParentBottom="true"
+            android:layout_alignStart="@+id/price_data"
+            android:layout_marginBottom="240dp" />
+
+        <TextView
+            android:id="@+id/website_key"
+            android:layout_width="119dp"
+            android:layout_height="41dp"
+            android:layout_alignEnd="@+id/address_key"
+            android:layout_alignTop="@+id/google_data" />
+
+        <TextView
+            android:id="@+id/website_data"
+            android:layout_width="170dp"
+            android:layout_height="40dp"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginBottom="188dp"
+            android:layout_marginEnd="17dp" />
+
+
+    </RelativeLayout>
+
+    <!--<ListView
+        android:id="@+id/information"
+        android:layout_width="325dp"
+        android:layout_height="447dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.383"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.613"></ListView>-->
+
+
+
+</android.support.constraint.ConstraintLayout>

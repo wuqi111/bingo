@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+
+        >
+
+
+        <TextView
+            android:id="@+id/information_name"
+            android:layout_width="match_parent"
+            android:layout_height="59dp"
+            android:layout_weight="66.6"
+
+            android:text="information_name"
+
+           />
+
+
+        <TextView
+            android:id="@+id/information_value"
+            android:layout_width="match_parent"
+            android:layout_height="59dp"
+            android:layout_weight="33.3"
+
+
+            android:text="information_value"
+         >
+
+        </TextView>
+
+    </LinearLayout>
+
+
+

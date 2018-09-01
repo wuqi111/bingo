@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title> hw4</title>
+    <style>
+        body{
+            text-align: center;      
+        }
+    </style>
+</head>
+    
+<body>
+    <p>Enter URL for Trucking List JSON File</p>
+    <form name="myform" method="post" action="hw4.html">
+    <input value="truckinglist.json" type="text" name="URL"><br>
+    <input  type="button" name="submit" onclick="veiwJSON(this.form)"  value="Submit Query">
+    </form>
+      
+<script type="text/javascript">
+    
+    function veiwJSON(what){
+        var URL =what.URL.value;
+       
+        
+        function loadJSON(url){
+            if(window.XMLHttpRequest){
+                xmlhttp=new XMLHttpRequest();
+            }
+            else{
+                xmlhttp=new ActiveXOject("Microsoft.XMLHTTP");
+            }
+            xmlhttp.open("GET",url,false);
+            xmlhttp.onreadystatechange=function(){
+              // jsonObj=JSON.parse(xmlhttp.responseText);
+                if(this.status!=200){alert(this.statusText);}
+            }
+            
+            try{
+            xmlhttp.send();
+            jsonObj=JSON.parse(xmlhttp.responseText);
+            return jsonObj;
+            }
+            catch(exception){
+                if(exception.name=="NetworkError"){
+              alert("File does not exist, please input a real file");
+               }
+           } 
+        }
+        
+        if(URL!=0){
+        jsonObj=loadJSON(URL);
+         
+            
+        if(window.ActiveXObject){
+            if(jsonObj.parseError.errorCode!=0){
+                var myError=jsonObj.parseError;
+                generateError(jsonObj);
+                hWin=window.open("","Error","height=300,width=1100");
+                hWin.document.write(txt);
+            }
+            
+            else{
+                generateHTML(jsonObj);
+                hWin=window.open("","Assingment4","height=800,width=1100");
+                hWin.document.write(txt);
+            }
+        }
+            
+           else if(generateHTML(jsonObj)!=false){
+               jsonObj.onload=generateHTML(jsonObj);
+                hWin=window.open("","Assignment4","height=800,width=1100");
+                hWin.document.write(txt);
+            }
+            hWin.document.close();
+        }
+        
+        else{
+            alert("please input a filename");
+        }
+        }
+    
+     function generateHTML(jsonObj){
+           root=jsonObj.documentElement;
+            txt="<html><head><title>JSON Parse Result</title></head><body>";
+             txt+="<table border='1'>"
+                  txt+="<tr>"
+                 for(var i=0; i<jsonObj.Mainline.Table.Header.Data.length; i++){
+                     txt+="<td><b><center>" +jsonObj.Mainline.Table.Header.Data[i]+"</center></b></td>"
+                 }
+         
+               txt+="</tr>"
+                if(jsonObj.Mainline.Table.Row!=undefined){
+               for(var j=0; j<jsonObj.Mainline.Table.Row.length; j++){
+                     txt+="<tr>"
+                   
+                   if(jsonObj.Mainline.Table.Row[j].Company!=null){
+                     txt+="<td>"+ jsonObj.Mainline.Table.Row[j].Company + "</td>"} else{txt+="<td>"+""+"</td>";}
+                   
+                   if (jsonObj.Mainline.Table.Row[j].Services!=null){
+                       txt+="<td>"+ jsonObj.Mainline.Table.Row[j].Services+"</td>"} 
+                   else{txt+="<td>"+""+"</td>";}
+                   
+                   txt+="<td style=padding-left:30px;width:200px>"
+                   for(var k=0;k<jsonObj.Mainline.Table.Row[j].Hubs.Hub.length;k++){
+                   if(jsonObj.Mainline.Table.Row[j].Hubs.Hub[k]==null){
+                       //txt+="<td>"+""+"</td>";
+                   }
+                       else{
+                           if(k==0){
+                                txt+= "<b><li>"+jsonObj.Mainline.Table.Row[j].Hubs.Hub[k]+"</li></b>";
+                           }
+                           else{
+                               txt+="<li>"+jsonObj.Mainline.Table.Row[j].Hubs.Hub[k]+"</li>";}
+                           }
+                       }
+                   txt+="</td>"
+                    
+                   if(jsonObj.Mainline.Table.Row[j].Revenue!=null){
+                        txt+="<td>"+jsonObj.Mainline.Table.Row[j].Revenue+"</td>"} 
+                        else{txt+="<td>"+""+"</td>";}
+                   
+                   if(jsonObj.Mainline.Table.Row[j].HomePage!=null){
+                        txt+= '<td><a href="'+jsonObj.Mainline.Table.Row[j].HomePage+'">'
+                        txt+= jsonObj.Mainline.Table.Row[j].HomePage+"</a></td>"} 
+                        else{txt+="<td>"+""+"</td>";}
+                   
+                   if(jsonObj.Mainline.Table.Row[j].Logo!=null){
+                        txt+= '<td><img src="'+jsonObj.Mainline.Table.Row[j].Logo+'" width='+"300px"+'></td>'}
+                      else{txt+="<td>"+""+"</td>";} 
+                     txt+="</tr>"
+                 }
+                }
+         else{
+            alert("There is no content");
+                return false;
+             
+         }
+                txt+="</table></body></html>";
+         
+         
+            
+        }
+    </script>
+</body>
+</html>
+

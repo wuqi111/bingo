@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title> homework3</title>
+<style>
+    body{
+        margin:0px;
+        width:1193px;
+    }
+ 
+    header{
+    background-color:white; 
+    width:1193px；
+    }
+    
+    table{
+    width:1193px;
+    border-top-style:solid;
+    border-color:rgb(234,234,234);
+    border-width:1px;
+    padding-left: 100px;
+    padding-right: 100px;
+    }
+    
+    th{
+    text-align:center;
+    padding:13px;
+    font-weight:500;
+    font-size:15px;
+    }
+    
+    a.ex1:link{
+    text-decoration:none;
+    color:rgb(184,152,86);
+    }
+    
+    a.ex2,a.ex3,a.ex4,a.ex5,a.ex6,a.ex7,a.text4:link{
+    text-decoration:none;
+    color:rgb(75,75,75);
+    }
+    
+     a.ex1:visited{
+    color:rgb(184,152,86);
+    }
+    
+    a.ex2,a.ex3,a.ex4,a.ex5,a.ex6,a.ex7,a.text4:visited{
+    color:rgb(75,75,75);
+    }
+    
+    a.ex6:hover,a.ex7:hover,a.text4:hover{
+    color:rgb(234,234,234);
+    }
+    
+    .img6{
+    background-image:url("http://cs-server.usc.edu:45678/hw/hw3/images/image6.jpg") ;
+    min-height:650px;
+    background-attachment:fixed;
+    background-repeat:no-repeat;
+    background-clip: border-box;
+    background-position:-360px 90px;
+    background-size:1900px 1100px;
+    }
+  
+    
+    .float1{
+    float:left;
+    height:auto;
+    width:600px;
+    margin-top:140px;
+    margin-left:135px;
+   
+    }
+    
+    .float2{
+    position:absolute;
+    float:right;
+    height:auto;
+    margin-top:360px;
+    margin-left:625px;
+    }
+    
+    .center{
+    width:1193px;
+    height:auto;
+    position:relative;
+   
+    }
+    
+    .doc{
+    width:450px;
+    height:250px;
+    position:absolute;
+    background-color:white;
+    top:1880px;
+    left:130px;
+    }
+    
+    .text{
+    width:391px;
+    height:139px;
+    position:absolute;
+    background-color:white;
+    top:1470px;
+    left:400px;
+    }
+    
+    .read{
+    width:444px;
+    height:260px;
+    position:absolute;
+    background-color:white;
+    top:920px;
+    left:625px;
+    }
+    
+    #text1{
+    font-family:Arial,Helvetica,sans-serif;
+    padding-left:150px;
+    font-size:13px;
+    }
+    
+    #text2{
+    font-family:Arial, Helvetica,sans-serif;
+    color:rgb(184,152,86);
+    text-align:center;
+    letter-spacing:20px;
+    font-size:55px;
+    margin-top:10px;
+    font-weight:200;
+    }
+
+    #text3{
+    font-size:10px;
+    text-align:center;
+    margin-top:44px;
+    letter-spacing:1px;
+    }
+    
+    .text4{
+    font-family: serif;
+    font-size:30px;
+    margin-left:120px;
+    margin-bottom:20px;    
+    }
+    
+    #text5{
+    color:rgb(77,77,77);
+    letter-spacing: 1px;
+    font-size:12px;
+    text-align:center;
+    margin-top: 50px;
+    }
+    
+    #text6{
+    text-align:center;
+    color:rgb(179,141,71);
+    font-family:serif;
+    font-style:italic;
+    font-size: 35px;
+    font-style: italic;
+    }
+
+    #text7{
+    font-family:Arial, Helvetica,sans-serif;
+    font-size:12px;
+    color:rgb(99,99,99);
+    letter-spacing: 3px;
+    }
+    
+    #text8{
+    color:rgb(176,147,104);
+    font-family:"Time New Roman",Times,serif;
+    font-size:35px;
+    letter-spacing: 2px;
+    font-style: italic;
+    }
+    
+    #text9{
+    font-family:Arial, Helvetica,sans-serif;
+    font-size:15px;
+    color:rgb(99,99,99);
+    letter-spacing: 1px;
+    }
+    
+    #text10{
+    color:white;
+    padding-top:53px;
+    padding-left:768px;
+    font-size:12px;
+    }
+    
+     #doc1{
+    margin-top:30px;
+    color:rgb(176,147,104);
+    font-family:"Time New Roman",Times,serif;
+    font-size: 35px;
+    font-style: italic;
+    }
+    
+    #doc2{
+    font-family:“Arial”,Helvetica,sans-serif;
+    font-size:15px;
+    letter-spacing: 1px;
+    color:rgb(99,99,99);
+    }
+    
+    .GoGreenMag{
+    background-color:white;
+    width:1193px;
+    height:265px;
+    position:absolute;
+    }
+    
+    .img7{
+        margin-top:300px;
+        margin-left:135px;
+    }
+    
+    .img5{
+    width:1193px;
+    background-image:url("http://cs-server.usc.edu:45678/hw/hw3/images/image5.jpg");
+    min-height:480px;
+    background-attachment:fixed;
+    background-repeat:no-repeat;
+    background-size:1200px;
+    background-position: 0 -300px;
+    margin-top:265px;
+    }
+    
+    .footer{
+    width:1193px;
+    height:215px;
+    margin-top:-20px;
+    background-color:rgb(174,139,71);
+    }
+
+</style>
+</head>
+
+
+
+<body>
+<header>
+    <p id="text1"><br>332 Keawe Street<br>Hilo,Hawail 96720</p>
+    <h2 id="text2">THYME</h2>
+    <table>
+    <tr>
+    <th><a class="ex1" href="page2.html#home" target="_blank">Home</a></th>
+    <th><a class="ex2" href="page2.html#Ourvision" target="_blank">Our Vision</a></th>
+    <th><a class="ex3"  href="page2.html#menu" target="_blank">Menu</a></th>
+    <th><a class="ex4"  href="page2.html#OrderOnline"   target="_blank">Order Online</a></th>
+    <th><a class="ex5" href="page2.html#contactus" target="_blank">Contact Us</a></th>
+    </tr>
+    </table>
+    </header>
+
+    <div class="img6"></div>
+
+<div class="float1">
+    <img src="http://cs-server.usc.edu:45678/hw/hw3/images/image3.jpg" width=444px height=500px >
+    <img style="margin-top:50px" src= "http://cs-server.usc.edu:45678/hw/hw3/images/image2.jpg" width=444px height=260px>
+</div>
+    
+<div class="float2">
+    <img style="margin-top:50px;"  src="http://cs-server.usc.edu:45678/hw/hw3/images/image1.jpg"width=444px height=308px>
+
+    <img style="margin-top:30px" src="http://cs-server.usc.edu:45678/hw/hw3/images/image4.jpg" width=444px height=460px>
+</div>
+
+    
+<div class="center">
+    <img class="img7" src="http://cs-server.usc.edu:45678/hw/hw3/images/image7.jpg" width=930px height=603px>
+<div class="text">
+    <P id="text3">GREENS JUST GOT FASTER!</P>
+    <p><a class="text4" href="page2.html#Order Online" target="_blank">Order Online</a></p>
+</div>
+</div>
+
+<div class="GoGreenMag">
+    <p id="text5">GoGreenMag.com</p>
+    <p id="text6">"Loved it. We walked in around 6:30 without reservations<br>and were seated.<br>The coconut crusted ono was on special and perfect."</p>
+</div>
+
+<div class="img5"></div>
+
+
+<div class="doc">
+    <h2 id="doc1">Freshest Island<br>food from local vendors</h2>
+    <p id="doc2">Supporting local economy and the<br>environment. Guiten-free items also<br>avaliable.</p>
+    <p style="colcor:rgb(0,0,0);"><a class="ex6" href="page2.html#Our vision"target="_blank">Read More Here></a></p>
+</div>
+    
+<div class="read">
+    <p id="text7">OUR RESTAURANT</p>
+    <h2 id="text8">Local fresh cuisine<br>for everyone</h2>
+    <p id="text9">Pineapples is a family-owned and operated<br>restaurant, dedicated to providing island fresh<br>cuisine to the east side of the Big island. Our<br>restaruant is located in the historic Pineapple<br>Building, located in the heart of downtown Hilo.</p>
+    <p style="colcor:rgb(0,0,0);"><a  class="ex7" href="page2.html#Our vision"target="_blank">Read More Here></a></p>
+    </div>
+
+<div class="footer">
+    <p id="text10">@2017 by Pineapples Hilo Restaurant<br>pineappleshilo.com</p>
+</div>
+    </body>
+</html>
